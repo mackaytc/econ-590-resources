@@ -2,10 +2,15 @@
  As the class goes along, I'll post code, data, and other useful resources here. 
  
 ## Useful Links
-Course textbooks
+
+Primary course textbooks:
  * [_The Effect_](https://theeffectbook.net/) by Nick Huntington-Klein
  * [_R for Data Science_](https://r4ds.had.co.nz/) by Hadley Wickham and Garrett Grolemund
-Cheat sheets for `R`
+
+Other textbooks we'll reference: 
+ * [_An Introduction to Statistical Learning_](https://www.statlearning.com/) by Gareth James et al. 
+
+Cheat sheets for `R`: 
  * [Basic `R` programming guide](https://github.com/mackaytc/econ-590-resources/blob/main/r-cheat-sheets/base-r.pdf)
  * [More advanced programming guide](https://github.com/mackaytc/econ-590-resources/blob/main/r-cheat-sheets/advancedR.pdf)
  * [Data transformation with `dplyr`](https://github.com/mackaytc/econ-590-resources/blob/main/r-cheat-sheets/data-transformation-1.pdf)
