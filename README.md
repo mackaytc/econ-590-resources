@@ -3,8 +3,8 @@
  
 ## Useful Links
 Cheat sheets for `R`
- * Basic `R` programming [guide](https://github.com/mackaytc/econ-590-resources/blob/main/r-cheat-sheets/base-r.pdf)
- * More advanced programming [guide](https://github.com/mackaytc/econ-590-resources/blob/main/r-cheat-sheets/advancedR.pdf)
+ * [Basic `R` programming guide](https://github.com/mackaytc/econ-590-resources/blob/main/r-cheat-sheets/base-r.pdf)
+ * [More advanced programming guide](https://github.com/mackaytc/econ-590-resources/blob/main/r-cheat-sheets/advancedR.pdf)
  * [Data transformation with `dplyr`](https://github.com/mackaytc/econ-590-resources/blob/main/r-cheat-sheets/data-transformation-1.pdf)
  * [Data visualization with `ggplot2`](https://github.com/mackaytc/econ-590-resources/blob/main/r-cheat-sheets/data-visualization-1.pdf)
  * [Overview of `tidyr`](https://github.com/mackaytc/econ-590-resources/blob/main/r-cheat-sheets/tidyr-1.pdf)
