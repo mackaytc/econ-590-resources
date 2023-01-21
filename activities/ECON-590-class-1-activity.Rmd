@@ -5,7 +5,6 @@ date: '2023-01-21'
 output: html_document
 ---
 
-
 ## Overview
 
 The goal of this first activity to familiarize ourselves with `RStudio`. We'll learn how to:
@@ -20,7 +19,7 @@ The goal of this first activity to familiarize ourselves with `RStudio`. We'll l
 
 -   Report our results using both the console and Quarto `.qmd` files
 
-## Setting the Stage
+### Setting the Stage
 
 `ECON-590-class-1-activity.qmd` is a `markdown` file - that means you can include regular, formatted text in addition to code and output in the same file.
 
@@ -103,7 +102,7 @@ sample.data <- read.csv(url("https://raw.githubusercontent.com/mackaytc/econ-590
 
 ```
 
-## Sample Data
+### Sample Data Description
 
 Our sample data set `sample.data` contains data from the American Community Survey (ACS). Each of the 4,000 rows in the data set corresponds to a particular person who responsed to the survey -- we'll refer to these rows as ***observations***. Each observation in this data set is then a person. Each column of the data set corresponds to a particular ***variable*** which stores information about each person in the survey. Key variables include:
 
