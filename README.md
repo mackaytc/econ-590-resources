@@ -21,3 +21,9 @@ Cheat sheets for `R`:
  * [Handling string variables with `stringr`](https://github.com/mackaytc/econ-590-resources/blob/main/r-cheat-sheets/strings-1.pdf)
  * [`Rmarkdown` guide](https://github.com/mackaytc/econ-590-resources/blob/main/r-cheat-sheets/rmarkdown-1.pdf)
  * [Tips for using RStudio IDE](https://github.com/mackaytc/econ-590-resources/blob/main/r-cheat-sheets/rstudio-1.pdf)
+
+## Getting Started with `R` and `RStudio`
+
+Two options: 
+ * A cloud-based version of RStudio [available here](https://posit.cloud/plans/free)
+ * Downloading and installling both programs - installation instructions and program downloads [available here](https://posit.co/downloads/)
