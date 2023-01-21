@@ -1,0 +1,200 @@
+---
+title: "ECON 590 Class 1 Activity"
+author: "Taylor Mackay"
+date: '2023-01-21'
+output: html_document
+---
+
+
+## Overview
+
+The goal of this first activity to familiarize ourselves with `RStudio`. We'll learn how to:
+
+-   Install and load packages (collections of `R` commands or functions) needed for data processing
+
+-   Load a sample data set and explore it visually
+
+-   Perform basic data manipulation tasks using `tidyverse`
+
+-   Calculate summary statistics for our data
+
+-   Report our results using both the console and Quarto `.qmd` files
+
+## Setting the Stage
+
+`ECON-590-class-1-activity.qmd` is a `markdown` file - that means you can include regular, formatted text in addition to code and output in the same file.
+
+-   You can run code "in-line" so that results show in the console -- you can either copy and paste the line you want to run into the console below, or select it and press `ctrl + Enter`
+
+    -   You'll see the results from the command printed below on the console
+
+-   You can also click "Render" (or press `CTRL + SHIFT + Enter`) to have an HTML document created with both the written text from the assignment and all your code + output
+
+    -   The resulting file should open in your web browser and will be saved as an `.HTML` file wherever you saved your `markdown` file
+
+### Some `R` Basics
+
+In `R`, we use `<-` as an *assignment operator --* it basically means the same thing as `=` . For instance, entering `x <- 1` creates a new object named `x` that has the numeric value 1. As a shortcut, you can press `ALT + -` instead of having to type out `<-`.
+
+Take a look at the code below to get a sense of how this process works
+
+```{r}
+
+# In R, any line that starts with a # is a comment -- this is how we'll explain what we're doing in a given section of code. Let's start by creating an object named "a" that stores the number 5 
+
+a <- 5
+
+# Now that we've run the code above, we can just type "a" into the command line, and R will return the value 5
+
+a 
+
+# We can also use "a" in an equation like the following 
+
+a + 5 
+
+# You can also create vectors of data in the same way
+
+b.vector <- c(1, 2, 3)
+
+b.vector
+
+# Take a look at the "Environment" pane on the right. Where are "a" and "b.vector" saved?
+```
+
+### Writing Readable Code
+
+*Documenting* your code means explaining what you're doing so that someone can read through what you've written and understand what the code does. It is *essential* for producing clear, usable.
+
+-   The ***key difference*** between the programming you might have done in class and what you'll have to do professionally is ***readability*** -- making sure that other people can understand your code
+
+-   We'll talk about how to write clear, readable code throughout this course, but the first step is to include comments in your code (see the code section above for an example)
+
+## Installing and Loading Packages in `R`
+
+"Basic `R`" comes with lots of commands installed already, but one of the benefits of `R` is the wide array of other programs that we can use. Packages in `R` are just collections of commands or functions that we can use to conduct data analysis tasks that aren't included in Base `R`.
+
+Running the code below will install the data processing package `tidyverse` and load it so that you're able to use the commands included with it.
+
+```{r}
+
+# Start by installing the program
+
+# install.packages("tidyverse")
+
+# Load the program so we're able to use the commands included with the package
+
+library(tidyverse)
+
+```
+
+## Load a Sample Data Set
+
+`R` is very flexible in how you can access and load data sets. As we go through the course, we'll cover a range of ways of loading data in `R`. In the example below, we'll load a `.csv`-formatted file that I've saved to GitHub.
+
+-   The function `read.csv()` tells `R` we want to load a `.csv` file
+
+-   The function `url()` tells `R` to go to the URL entered in quotes and look for information to retrieve - this is a handy way of accessing data that's not stored on your local computer.
+
+```{r}
+
+# Load .csv file stored via course GitHub
+
+sample.data <- read.csv(url("https://raw.githubusercontent.com/mackaytc/econ-590-resources/main/data/ACS-4k-obs-sample-data.csv"))
+
+```
+
+## Sample Data
+
+Our sample data set `sample.data` contains data from the American Community Survey (ACS). Each of the 4,000 rows in the data set corresponds to a particular person who responsed to the survey -- we'll refer to these rows as ***observations***. Each observation in this data set is then a person. Each column of the data set corresponds to a particular ***variable*** which stores information about each person in the survey. Key variables include:
+
+-   `year`: Tells you the year in which this person or observation took the ACS
+
+-   `statefips`: Tells you the state in which that person lived when they took the ACS
+
+-   `incwage`: Tells you the annual wage and salary information for that person
+
+## Working with Data using `dplyr`
+
+Now we want to demonstrate several data cleaning tasks using `dplyr` functions. We'll start by removing variables from our data set, then demonstrate how to create a ***subset*** of the data (a limited sample of observations).
+
+```{r}
+
+# We want to make the data set a bit smaller and more manageable for today. Let's start by using the select command to keep only the "sample.data", "year", "statefip", and "incwage" variables
+
+sample.data <- select(sample.data, year, statefip, incwage) 
+
+# The head() command will show us a snapshot of what the data set looks like
+
+head(sample.data)
+
+# Suppose we wanted to subset the data so that we only kept observations that lived in New York. To do this, we can use the filter() function to create a new object "sample.data.NY" that stores our subsetted data. 
+
+sample.data.NY <- filter(sample.data, statefip == "new york")
+
+# Take a look at the new data set stored in the "Environment" window. Are all the observations from New York? 
+
+head(sample.data.NY)
+
+# We can also use filter() to select observations by numeric values. This time, we won't create a new object - we'll just output the result using head(). We can use the n = 10 option to show 10 rows of the subsetted data. 
+
+head(filter(sample.data, incwage > 20000), n = 10)
+
+```
+
+## Practice Problems
+
+Using our sample data set, answer the following questions. Before you get started on the activity, take a look at the `dplyr` cheat sheet posted on the course GitHub page.
+
+1)  Using the `mean()` function, report the average wage income for everyone in our sample
+
+```{r}
+
+# Insert your code here
+
+```
+
+2)  Using the `filter()` function, report the average wage income for everyone in our sample who lives in Florida
+
+```{r}
+
+# Insert your code here
+
+```
+
+3)  Report the average wage for everyone who *didn't* live in Florida.
+
+*HINT:* We can use `filter()` again -- try entering `filter(sample.data, statefip %in% "florida")`.
+
+```{r}
+
+# Insert your code here
+
+```
+
+4)  Report the average wage income from observations who who surveyed in 2004 through 2008.
+
+*HINT:* You can use `&&` to add multiple restrictions in your `filter()` command.
+
+```{r}
+
+# Insert your code here
+
+```
+
+5)  Using the `dplyr` cheat sheet on GitHub, calculate the median, minimum and maximum values of the `incwage` variable
+
+```{r}
+
+# Insert your code here
+
+```
+
+6)  Calculate the average wage for each year in the data.
+
+*HINT:* Take a look at the `Group Data` section of the `dplyr` cheat sheet. We want to group the data by year, then calculate average wages using the `summarise()` command.
+
+```{r}
+
+# Insert your code here
+
+```
