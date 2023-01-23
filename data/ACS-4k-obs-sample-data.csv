@@ -1,4 +1,4 @@
-year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
+year,state,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2004,new york,10000,0,no,50,female,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
 2004,florida,35000,0,no,24,male,never married/single,black/african american/negro,not hispanic,"yes, in the labor force","no, not in school"
 2004,florida,0,0,no,87,male,"married, spouse present",white,not hispanic,"no, not in the labor force","no, not in school"
@@ -42,7 +42,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2004,new jersey,999999,0,no,10,female,never married/single,other asian or pacific islander,not hispanic,n/a,"yes, in school"
 2004,oklahoma,999999,0,no,4,male,never married/single,white,not hispanic,n/a,"yes, in school"
 2004,california,999999,867,no,10,male,never married/single,"other race, nec",mexican,n/a,"yes, in school"
-2004,massachusetts,999999,0,no,0,male,never married/single,white,not hispanic,n/a,n/a
+2004,massachusetts,999999,0,no,less than 1 year old,male,never married/single,white,not hispanic,n/a,n/a
 2004,georgia,0,0,no,18,male,never married/single,black/african american/negro,not hispanic,"no, not in the labor force","yes, in school"
 2004,tennessee,13000,0,no,44,female,"married, spouse present",black/african american/negro,not hispanic,"yes, in the labor force","no, not in school"
 2004,new york,999999,850,no,11,female,never married/single,"other race, nec",mexican,n/a,"yes, in school"
@@ -78,7 +78,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2004,massachusetts,110000,0,no,29,male,never married/single,white,not hispanic,"yes, in the labor force","no, not in school"
 2004,michigan,999999,0,no,3,male,never married/single,white,not hispanic,n/a,"no, not in school"
 2004,illinois,660,0,no,82,female,never married/single,white,not hispanic,"yes, in the labor force","no, not in school"
-2004,texas,999999,0,yes,0,female,never married/single,black/african american/negro,not hispanic,n/a,n/a
+2004,texas,999999,0,yes,less than 1 year old,female,never married/single,black/african american/negro,not hispanic,n/a,n/a
 2004,new york,10000,950,no,38,male,"married, spouse present",black/african american/negro,puerto rican,"yes, in the labor force","no, not in school"
 2004,california,24000,0,no,28,male,never married/single,white,not hispanic,"yes, in the labor force","no, not in school"
 2004,connecticut,42700,0,no,42,female,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
@@ -126,7 +126,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2004,north carolina,75000,0,no,37,male,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
 2004,michigan,27300,0,no,57,female,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
 2004,west virginia,0,0,no,71,female,"married, spouse present",white,not hispanic,"no, not in the labor force","no, not in school"
-2004,california,999999,590,no,0,male,never married/single,white,mexican,n/a,n/a
+2004,california,999999,590,no,less than 1 year old,male,never married/single,white,mexican,n/a,n/a
 2004,rhode island,0,0,no,87,female,widowed,white,not hispanic,"no, not in the labor force","no, not in school"
 2004,new york,999999,0,no,4,female,never married/single,white,not hispanic,n/a,"yes, in school"
 2004,south carolina,999999,0,no,10,female,never married/single,black/african american/negro,not hispanic,n/a,"yes, in school"
@@ -178,7 +178,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2004,mississippi,75000,0,no,54,male,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
 2004,california,38000,0,no,32,female,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
 2004,texas,0,0,no,64,female,"married, spouse present",white,not hispanic,"no, not in the labor force","no, not in school"
-2004,georgia,999999,0,no,0,female,never married/single,white,not hispanic,n/a,n/a
+2004,georgia,999999,0,no,less than 1 year old,female,never married/single,white,not hispanic,n/a,n/a
 2004,wisconsin,36000,0,no,61,male,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
 2004,nebraska,35000,0,no,28,male,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
 2004,california,999999,0,no,1,male,never married/single,white,not hispanic,n/a,n/a
@@ -228,7 +228,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2004,michigan,46000,0,no,26,female,never married/single,other asian or pacific islander,not hispanic,"yes, in the labor force","yes, in school"
 2004,massachusetts,32000,0,no,45,female,never married/single,white,not hispanic,"yes, in the labor force","no, not in school"
 2004,florida,0,0,no,33,female,"married, spouse present",white,not hispanic,"no, not in the labor force","no, not in school"
-2004,virginia,999999,0,no,0,male,never married/single,white,not hispanic,n/a,n/a
+2004,virginia,999999,0,no,less than 1 year old,male,never married/single,white,not hispanic,n/a,n/a
 2004,pennsylvania,30100,0,no,39,male,"married, spouse present","other race, nec",other,"yes, in the labor force","no, not in school"
 2004,north carolina,12000,0,no,47,female,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
 2004,california,66000,0,no,46,male,never married/single,white,not hispanic,"yes, in the labor force","no, not in school"
@@ -512,7 +512,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2006,massachusetts,999999,2250,no,8,male,never married/single,white,not hispanic,n/a,"yes, in school"
 2006,california,0,640,no,18,male,never married/single,white,mexican,"no, not in the labor force","no, not in school"
 2006,illinois,999999,0,no,6,male,never married/single,white,not hispanic,n/a,"no, not in school"
-2006,wisconsin,999999,260,yes,0,female,never married/single,white,not hispanic,n/a,n/a
+2006,wisconsin,999999,260,yes,less than 1 year old,female,never married/single,white,not hispanic,n/a,n/a
 2006,ohio,2000,0,no,20,male,never married/single,white,not hispanic,"no, not in the labor force","yes, in school"
 2006,texas,0,0,no,21,male,never married/single,white,not hispanic,"no, not in the labor force","no, not in school"
 2006,texas,999999,0,no,5,male,never married/single,white,mexican,n/a,"no, not in school"
@@ -713,7 +713,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2006,california,4800,1490,yes,47,female,"married, spouse present","other race, nec",not hispanic,"yes, in the labor force","no, not in school"
 2006,kentucky,43200,0,no,37,male,"married, spouse present",white,not hispanic,"no, not in the labor force","no, not in school"
 2006,arkansas,0,0,no,18,female,never married/single,white,not hispanic,"yes, in the labor force","yes, in school"
-2006,pennsylvania,999999,0,no,0,male,never married/single,white,not hispanic,n/a,n/a
+2006,pennsylvania,999999,0,no,less than 1 year old,male,never married/single,white,not hispanic,n/a,n/a
 2006,florida,27000,1217,no,37,male,"married, spouse present",white,other,"yes, in the labor force","no, not in school"
 2006,tennessee,0,597,no,46,female,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
 2006,maine,0,0,no,71,female,"married, spouse present",white,not hispanic,"no, not in the labor force","no, not in school"
@@ -810,7 +810,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2007,alabama,999999,0,no,10,female,never married/single,white,not hispanic,n/a,"yes, in school"
 2007,ohio,25000,0,no,53,female,divorced,white,not hispanic,"yes, in the labor force","no, not in school"
 2007,california,28000,1100,no,27,female,never married/single,other asian or pacific islander,not hispanic,"yes, in the labor force","no, not in school"
-2007,ohio,999999,0,no,0,male,never married/single,white,not hispanic,n/a,n/a
+2007,ohio,999999,0,no,less than 1 year old,male,never married/single,white,not hispanic,n/a,n/a
 2007,louisiana,0,0,no,62,male,"married, spouse present",black/african american/negro,not hispanic,"no, not in the labor force","no, not in school"
 2007,texas,65000,0,no,64,female,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
 2007,maine,999999,0,no,15,male,never married/single,white,not hispanic,n/a,"yes, in school"
@@ -1040,7 +1040,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2008,wisconsin,0,0,no,81,female,widowed,white,not hispanic,"no, not in the labor force","no, not in school"
 2008,washington,50000,0,no,29,female,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
 2008,new jersey,1200,0,no,17,male,never married/single,white,not hispanic,"yes, in the labor force","yes, in school"
-2008,illinois,999999,0,no,0,male,never married/single,white,not hispanic,n/a,n/a
+2008,illinois,999999,0,no,less than 1 year old,male,never married/single,white,not hispanic,n/a,n/a
 2008,north carolina,999999,1020,no,5,male,never married/single,black/african american/negro,not hispanic,n/a,"yes, in school"
 2008,louisiana,6300,0,no,21,male,never married/single,"other race, nec",mexican,"yes, in the labor force","no, not in school"
 2008,new york,80,0,yes,56,male,divorced,white,not hispanic,"no, not in the labor force","no, not in school"
@@ -1189,9 +1189,9 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2008,florida,20000,820,no,21,female,never married/single,white,not hispanic,"yes, in the labor force","yes, in school"
 2008,connecticut,999999,0,no,5,female,never married/single,white,not hispanic,n/a,"yes, in school"
 2008,virginia,0,0,no,67,male,"married, spouse present",white,not hispanic,"no, not in the labor force","no, not in school"
-2008,mississippi,999999,545,yes,0,male,never married/single,black/african american/negro,not hispanic,n/a,n/a
+2008,mississippi,999999,545,yes,less than 1 year old,male,never married/single,black/african american/negro,not hispanic,n/a,n/a
 2008,kentucky,999999,0,no,15,female,never married/single,white,not hispanic,n/a,"yes, in school"
-2008,connecticut,999999,0,no,0,female,never married/single,white,not hispanic,n/a,n/a
+2008,connecticut,999999,0,no,less than 1 year old,female,never married/single,white,not hispanic,n/a,n/a
 2008,california,0,2482,no,31,female,"married, spouse present",white,not hispanic,"no, not in the labor force","no, not in school"
 2008,california,120000,1350,no,47,female,divorced,white,mexican,"yes, in the labor force","no, not in school"
 2008,illinois,0,0,no,21,female,never married/single,"other race, nec",mexican,"no, not in the labor force","yes, in school"
@@ -1219,7 +1219,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2008,california,31000,1250,no,39,male,divorced,white,not hispanic,"yes, in the labor force","no, not in school"
 2008,missouri,0,0,no,42,female,"married, spouse present",white,not hispanic,"no, not in the labor force","no, not in school"
 2008,south carolina,40000,450,no,48,male,never married/single,white,not hispanic,"yes, in the labor force","no, not in school"
-2008,florida,999999,567,yes,0,female,never married/single,"other race, nec",mexican,n/a,n/a
+2008,florida,999999,567,yes,less than 1 year old,female,never married/single,"other race, nec",mexican,n/a,n/a
 2008,new york,999999,1290,no,6,female,never married/single,white,other,n/a,"no, not in school"
 2008,ohio,999999,0,no,15,male,never married/single,white,other,n/a,"yes, in school"
 2008,new york,17000,100,no,44,male,divorced,white,not hispanic,"yes, in the labor force","no, not in school"
@@ -1234,12 +1234,12 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2008,massachusetts,36000,0,no,44,female,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
 2008,nebraska,2000,0,no,19,female,never married/single,white,mexican,"yes, in the labor force","yes, in school"
 2008,maryland,22000,0,no,30,male,never married/single,black/african american/negro,not hispanic,"yes, in the labor force","yes, in school"
-2008,pennsylvania,999999,0,no,0,female,never married/single,other asian or pacific islander,not hispanic,n/a,n/a
+2008,pennsylvania,999999,0,no,less than 1 year old,female,never married/single,other asian or pacific islander,not hispanic,n/a,n/a
 2008,washington,17500,1194,no,31,male,never married/single,white,not hispanic,"yes, in the labor force","no, not in school"
 2008,texas,600,0,no,17,female,never married/single,white,not hispanic,"no, not in the labor force","yes, in school"
 2008,florida,0,0,no,45,female,"married, spouse present",white,not hispanic,"no, not in the labor force","no, not in school"
 2008,illinois,0,0,no,21,female,never married/single,white,not hispanic,"no, not in the labor force","yes, in school"
-2008,california,999999,0,no,0,female,never married/single,white,not hispanic,n/a,n/a
+2008,california,999999,0,no,less than 1 year old,female,never married/single,white,not hispanic,n/a,n/a
 2008,tennessee,3600,740,no,46,female,never married/single,black/african american/negro,not hispanic,"yes, in the labor force","no, not in school"
 2008,kentucky,15000,0,yes,69,female,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
 2008,wisconsin,6000,960,yes,34,female,separated,white,not hispanic,"yes, in the labor force","no, not in school"
@@ -1602,7 +1602,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2010,north carolina,0,0,no,70,female,"married, spouse present",other asian or pacific islander,not hispanic,"no, not in the labor force","no, not in school"
 2010,florida,7800,1594,no,35,male,"married, spouse present",other asian or pacific islander,not hispanic,"yes, in the labor force","no, not in school"
 2010,washington,2200,0,no,81,male,"married, spouse absent",white,not hispanic,"yes, in the labor force","no, not in school"
-2010,south carolina,999999,0,no,0,female,never married/single,white,not hispanic,n/a,n/a
+2010,south carolina,999999,0,no,less than 1 year old,female,never married/single,white,not hispanic,n/a,n/a
 2010,hawaii,6700,0,no,29,male,never married/single,other asian or pacific islander,not hispanic,"yes, in the labor force","yes, in school"
 2010,north carolina,0,0,no,63,female,"married, spouse present",white,not hispanic,"no, not in the labor force","no, not in school"
 2010,california,50000,960,no,27,male,never married/single,white,not hispanic,"yes, in the labor force","no, not in school"
@@ -1657,7 +1657,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2010,new york,0,1140,yes,55,female,divorced,white,not hispanic,"no, not in the labor force","no, not in school"
 2010,illinois,0,900,yes,41,female,never married/single,white,not hispanic,"no, not in the labor force","yes, in school"
 2010,massachusetts,32000,0,no,62,female,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
-2010,missouri,999999,0,no,0,female,never married/single,white,not hispanic,n/a,n/a
+2010,missouri,999999,0,no,less than 1 year old,female,never married/single,white,not hispanic,n/a,n/a
 2010,indiana,18700,750,no,29,female,"married, spouse present",black/african american/negro,not hispanic,"yes, in the labor force","no, not in school"
 2010,maryland,90000,1033,yes,37,male,never married/single,white,not hispanic,"yes, in the labor force","no, not in school"
 2010,arkansas,0,510,no,53,female,never married/single,black/african american/negro,not hispanic,"no, not in the labor force","no, not in school"
@@ -2128,7 +2128,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2012,georgia,20000,0,yes,36,female,divorced,white,not hispanic,"yes, in the labor force","yes, in school"
 2012,oklahoma,24000,0,no,21,male,never married/single,american indian or alaska native,not hispanic,"yes, in the labor force","no, not in school"
 2012,illinois,5200,0,no,35,female,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
-2012,north dakota,999999,0,no,0,female,never married/single,white,not hispanic,n/a,n/a
+2012,north dakota,999999,0,no,less than 1 year old,female,never married/single,white,not hispanic,n/a,n/a
 2012,california,0,1468,no,51,female,"married, spouse present",other asian or pacific islander,not hispanic,"yes, in the labor force","no, not in school"
 2012,north carolina,2200,369,no,47,female,never married/single,black/african american/negro,not hispanic,"yes, in the labor force","no, not in school"
 2012,wisconsin,999999,0,yes,8,male,never married/single,white,not hispanic,n/a,"yes, in school"
@@ -2145,7 +2145,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2012,new jersey,0,0,no,81,male,"married, spouse present",white,not hispanic,"no, not in the labor force","no, not in school"
 2012,california,999999,1360,no,14,female,never married/single,white,mexican,n/a,"yes, in school"
 2012,california,0,0,no,87,male,widowed,white,not hispanic,"no, not in the labor force","no, not in school"
-2012,pennsylvania,999999,0,no,0,female,never married/single,white,not hispanic,n/a,n/a
+2012,pennsylvania,999999,0,no,less than 1 year old,female,never married/single,white,not hispanic,n/a,n/a
 2012,new jersey,0,0,no,46,female,"married, spouse present",white,puerto rican,"no, not in the labor force","no, not in school"
 2012,new york,999999,0,no,8,female,never married/single,white,not hispanic,n/a,"yes, in school"
 2012,michigan,82000,0,no,60,male,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
@@ -2515,7 +2515,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2014,florida,100000,0,no,47,male,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
 2014,virginia,110000,1563,no,29,male,never married/single,chinese,not hispanic,"yes, in the labor force","no, not in school"
 2014,minnesota,0,0,no,72,female,"married, spouse present",white,not hispanic,"no, not in the labor force","no, not in school"
-2014,washington,999999,822,no,0,male,never married/single,white,not hispanic,n/a,n/a
+2014,washington,999999,822,no,less than 1 year old,male,never married/single,white,not hispanic,n/a,n/a
 2014,illinois,12000,0,no,48,male,divorced,white,not hispanic,"yes, in the labor force","no, not in school"
 2014,texas,560,830,yes,16,male,never married/single,two major races,not hispanic,"no, not in the labor force","yes, in school"
 2014,new jersey,999999,0,no,12,male,never married/single,white,not hispanic,n/a,"yes, in school"
@@ -2541,7 +2541,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2014,texas,4100,0,no,16,female,never married/single,white,not hispanic,"yes, in the labor force","yes, in school"
 2014,north carolina,999999,0,no,6,male,never married/single,white,not hispanic,n/a,"yes, in school"
 2014,california,33600,0,no,66,female,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
-2014,iowa,999999,650,yes,0,male,never married/single,"other race, nec",mexican,n/a,n/a
+2014,iowa,999999,650,yes,less than 1 year old,male,never married/single,"other race, nec",mexican,n/a,n/a
 2014,tennessee,0,0,yes,56,female,divorced,black/african american/negro,not hispanic,"no, not in the labor force","yes, in school"
 2014,california,0,1079,yes,16,male,never married/single,white,not hispanic,"no, not in the labor force","yes, in school"
 2014,florida,0,0,no,65,female,"married, spouse present",white,not hispanic,"no, not in the labor force","no, not in school"
@@ -2619,7 +2619,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2014,georgia,7200,0,no,45,male,never married/single,black/african american/negro,not hispanic,"no, not in the labor force","no, not in school"
 2014,louisiana,0,1230,no,56,female,"married, spouse present",white,not hispanic,"no, not in the labor force","no, not in school"
 2014,kansas,30500,0,no,36,female,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
-2014,pennsylvania,999999,780,no,0,male,never married/single,white,not hispanic,n/a,n/a
+2014,pennsylvania,999999,780,no,less than 1 year old,male,never married/single,white,not hispanic,n/a,n/a
 2014,michigan,999999,0,no,8,female,never married/single,white,not hispanic,n/a,"yes, in school"
 2014,california,0,0,no,70,female,"married, spouse present",white,not hispanic,"no, not in the labor force","no, not in school"
 2014,california,0,0,no,79,male,"married, spouse present",white,mexican,"no, not in the labor force","no, not in school"
@@ -2787,7 +2787,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2015,connecticut,999999,0,no,7,female,never married/single,white,not hispanic,n/a,"yes, in school"
 2015,new york,0,0,no,56,male,"married, spouse present",white,not hispanic,"no, not in the labor force","no, not in school"
 2015,michigan,0,2500,no,81,male,"married, spouse absent",white,not hispanic,"no, not in the labor force","no, not in school"
-2015,new york,999999,0,no,0,male,never married/single,white,not hispanic,n/a,n/a
+2015,new york,999999,0,no,less than 1 year old,male,never married/single,white,not hispanic,n/a,n/a
 2015,new york,0,0,no,50,male,divorced,white,not hispanic,"yes, in the labor force","no, not in school"
 2015,pennsylvania,2500,0,no,51,female,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
 2015,california,9600,770,no,28,female,never married/single,"other race, nec",mexican,"yes, in the labor force","no, not in school"
@@ -2797,13 +2797,13 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2015,washington,0,0,no,94,female,widowed,white,not hispanic,"no, not in the labor force","no, not in school"
 2015,colorado,27000,0,no,56,female,divorced,white,not hispanic,"yes, in the labor force","no, not in school"
 2015,washington,20000,1130,yes,36,female,never married/single,white,not hispanic,"yes, in the labor force","no, not in school"
-2015,new york,999999,2040,yes,0,male,never married/single,white,not hispanic,n/a,n/a
-2015,virginia,999999,0,no,0,male,never married/single,other asian or pacific islander,not hispanic,n/a,n/a
+2015,new york,999999,2040,yes,less than 1 year old,male,never married/single,white,not hispanic,n/a,n/a
+2015,virginia,999999,0,no,less than 1 year old,male,never married/single,other asian or pacific islander,not hispanic,n/a,n/a
 2015,alabama,999999,0,no,8,male,never married/single,white,not hispanic,n/a,"yes, in school"
 2015,florida,45000,0,no,29,male,"married, spouse present",black/african american/negro,not hispanic,"yes, in the labor force","no, not in school"
 2015,iowa,55000,0,no,40,male,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
 2015,wisconsin,999999,1297,no,12,male,never married/single,white,not hispanic,n/a,"yes, in school"
-2015,arkansas,999999,1036,yes,0,female,never married/single,three or more major races,not hispanic,n/a,n/a
+2015,arkansas,999999,1036,yes,less than 1 year old,female,never married/single,three or more major races,not hispanic,n/a,n/a
 2015,new jersey,0,0,no,59,female,"married, spouse present",white,not hispanic,"no, not in the labor force","no, not in school"
 2015,california,13500,1300,no,30,male,never married/single,white,other,"yes, in the labor force","yes, in school"
 2015,illinois,58000,890,no,28,female,never married/single,black/african american/negro,not hispanic,"yes, in the labor force","yes, in school"
@@ -2859,7 +2859,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2015,pennsylvania,30000,0,no,28,male,never married/single,white,not hispanic,"yes, in the labor force","no, not in school"
 2015,kentucky,40000,0,no,52,female,divorced,white,not hispanic,"yes, in the labor force","no, not in school"
 2015,north carolina,999999,785,yes,8,female,never married/single,"other race, nec",puerto rican,n/a,"yes, in school"
-2015,west virginia,999999,0,yes,0,male,never married/single,black/african american/negro,not hispanic,n/a,n/a
+2015,west virginia,999999,0,yes,less than 1 year old,male,never married/single,black/african american/negro,not hispanic,n/a,n/a
 2015,california,0,1835,no,40,female,"married, spouse present",white,mexican,"no, not in the labor force","no, not in school"
 2015,west virginia,30000,0,no,53,female,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
 2015,ohio,38000,0,no,39,male,never married/single,white,not hispanic,"yes, in the labor force","no, not in school"
@@ -3011,7 +3011,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2016,south carolina,39000,740,no,37,male,"married, spouse present",black/african american/negro,not hispanic,"yes, in the labor force","no, not in school"
 2016,missouri,0,0,no,65,female,divorced,black/african american/negro,not hispanic,"no, not in the labor force","no, not in school"
 2016,north carolina,20000,0,no,47,male,never married/single,white,not hispanic,"yes, in the labor force","no, not in school"
-2016,texas,999999,0,no,0,female,never married/single,black/african american/negro,not hispanic,n/a,n/a
+2016,texas,999999,0,no,less than 1 year old,female,never married/single,black/african american/negro,not hispanic,n/a,n/a
 2016,minnesota,999999,0,no,5,male,never married/single,white,not hispanic,n/a,"no, not in school"
 2016,maryland,999999,0,no,15,female,never married/single,black/african american/negro,not hispanic,n/a,"yes, in school"
 2016,florida,0,0,yes,51,male,divorced,white,not hispanic,"no, not in the labor force","no, not in school"
@@ -3068,7 +3068,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2016,kansas,0,0,no,57,female,"married, spouse present",white,not hispanic,"no, not in the labor force","no, not in school"
 2016,minnesota,0,725,no,42,female,divorced,white,not hispanic,"yes, in the labor force","no, not in school"
 2016,nebraska,0,0,no,69,male,"married, spouse present",american indian or alaska native,not hispanic,"no, not in the labor force","no, not in school"
-2016,indiana,999999,0,no,0,male,never married/single,white,not hispanic,n/a,n/a
+2016,indiana,999999,0,no,less than 1 year old,male,never married/single,white,not hispanic,n/a,n/a
 2016,rhode island,28000,0,no,38,female,"married, spouse present",white,not hispanic,"yes, in the labor force","yes, in school"
 2016,california,999999,0,no,13,male,never married/single,other asian or pacific islander,not hispanic,n/a,"yes, in school"
 2016,california,100,1400,no,19,male,never married/single,"other race, nec",mexican,"yes, in the labor force","no, not in school"
@@ -3129,7 +3129,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2016,new york,48000,1000,no,64,female,separated,black/african american/negro,not hispanic,"yes, in the labor force","no, not in school"
 2016,texas,999999,0,no,12,male,never married/single,white,mexican,n/a,"yes, in school"
 2016,tennessee,120000,0,no,45,male,"married, spouse present",two major races,not hispanic,"yes, in the labor force","no, not in school"
-2016,michigan,999999,650,no,0,male,never married/single,white,puerto rican,n/a,n/a
+2016,michigan,999999,650,no,less than 1 year old,male,never married/single,white,puerto rican,n/a,n/a
 2016,tennessee,2500,0,no,54,male,divorced,white,not hispanic,"yes, in the labor force","no, not in school"
 2016,new jersey,0,0,no,82,female,widowed,white,not hispanic,"no, not in the labor force","no, not in school"
 2016,georgia,36000,2058,no,45,male,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
@@ -3234,7 +3234,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2016,michigan,0,0,no,76,female,"married, spouse present",white,not hispanic,"no, not in the labor force","no, not in school"
 2016,florida,0,0,no,95,male,widowed,white,not hispanic,"no, not in the labor force","no, not in school"
 2016,california,60000,1760,no,25,male,never married/single,white,not hispanic,"yes, in the labor force","no, not in school"
-2016,north carolina,999999,710,yes,0,male,never married/single,white,mexican,n/a,n/a
+2016,north carolina,999999,710,yes,less than 1 year old,male,never married/single,white,mexican,n/a,n/a
 2016,texas,999999,0,no,8,female,never married/single,white,other,n/a,"yes, in school"
 2016,wisconsin,0,0,no,28,female,"married, spouse present",white,not hispanic,"no, not in the labor force","no, not in school"
 2016,idaho,3200,0,no,17,male,never married/single,white,mexican,"yes, in the labor force","no, not in school"
@@ -3255,7 +3255,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2017,new york,999999,0,no,7,female,never married/single,white,not hispanic,n/a,"yes, in school"
 2017,indiana,50000,0,no,29,male,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
 2017,missouri,24000,0,yes,57,female,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
-2017,north carolina,999999,50,yes,0,female,never married/single,black/african american/negro,not hispanic,n/a,n/a
+2017,north carolina,999999,50,yes,less than 1 year old,female,never married/single,black/african american/negro,not hispanic,n/a,n/a
 2017,washington,0,0,yes,84,male,widowed,white,not hispanic,"no, not in the labor force","no, not in school"
 2017,pennsylvania,0,0,no,55,male,divorced,white,not hispanic,"yes, in the labor force","no, not in school"
 2017,virginia,0,0,no,81,male,"married, spouse present",white,not hispanic,"no, not in the labor force","no, not in school"
@@ -3371,7 +3371,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2017,california,84000,0,no,59,female,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
 2017,illinois,999999,790,yes,1,female,never married/single,black/african american/negro,not hispanic,n/a,n/a
 2017,louisiana,999999,851,yes,14,male,never married/single,"other race, nec",other,n/a,"yes, in school"
-2017,georgia,999999,820,yes,0,male,never married/single,black/african american/negro,not hispanic,n/a,n/a
+2017,georgia,999999,820,yes,less than 1 year old,male,never married/single,black/african american/negro,not hispanic,n/a,n/a
 2017,indiana,34000,0,no,42,male,"married, spouse present",white,mexican,"yes, in the labor force","no, not in school"
 2017,new york,0,0,no,82,male,widowed,white,not hispanic,"no, not in the labor force","no, not in school"
 2017,wisconsin,18000,0,no,60,female,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
@@ -3461,7 +3461,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2017,california,100000,0,no,58,female,"married, spouse present",white,mexican,"yes, in the labor force","no, not in school"
 2017,arizona,0,0,no,29,male,never married/single,black/african american/negro,not hispanic,"no, not in the labor force","no, not in school"
 2017,oregon,22900,0,no,61,male,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
-2017,virginia,999999,0,no,0,female,never married/single,two major races,not hispanic,n/a,n/a
+2017,virginia,999999,0,no,less than 1 year old,female,never married/single,two major races,not hispanic,n/a,n/a
 2017,oklahoma,0,0,no,93,female,widowed,white,not hispanic,"no, not in the labor force","no, not in school"
 2017,washington,88000,0,no,42,male,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
 2017,california,999999,0,no,1,female,never married/single,white,not hispanic,n/a,n/a
@@ -3539,7 +3539,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2018,florida,999999,0,no,6,female,never married/single,white,not hispanic,n/a,"yes, in school"
 2018,missouri,0,0,no,86,male,"married, spouse present",white,not hispanic,"no, not in the labor force","no, not in school"
 2018,california,55000,0,no,33,male,never married/single,chinese,not hispanic,"yes, in the labor force","no, not in school"
-2018,louisiana,999999,0,no,0,female,never married/single,white,not hispanic,n/a,n/a
+2018,louisiana,999999,0,no,less than 1 year old,female,never married/single,white,not hispanic,n/a,n/a
 2018,kansas,999999,0,no,14,male,never married/single,white,not hispanic,n/a,"yes, in school"
 2018,new jersey,73000,0,no,68,female,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
 2018,arkansas,999999,0,yes,10,female,never married/single,white,not hispanic,n/a,"yes, in school"
@@ -3591,7 +3591,7 @@ year,statefip,incwage,rentgrs,foodstmp,age,sex,marst,race,hispan,labforce,school
 2018,texas,0,0,no,60,female,divorced,white,not hispanic,"no, not in the labor force","no, not in school"
 2018,indiana,0,0,no,85,male,"married, spouse present",white,not hispanic,"no, not in the labor force","no, not in school"
 2018,oregon,0,1278,no,26,female,"married, spouse present",white,not hispanic,"no, not in the labor force","no, not in school"
-2018,missouri,999999,0,no,0,female,never married/single,white,not hispanic,n/a,n/a
+2018,missouri,999999,0,no,less than 1 year old,female,never married/single,white,not hispanic,n/a,n/a
 2018,connecticut,0,0,no,16,female,never married/single,black/african american/negro,not hispanic,"no, not in the labor force","yes, in school"
 2018,california,21600,0,no,50,female,"married, spouse present","other race, nec",mexican,"yes, in the labor force","no, not in school"
 2018,connecticut,20000,0,yes,57,female,"married, spouse present",white,not hispanic,"yes, in the labor force","no, not in school"
