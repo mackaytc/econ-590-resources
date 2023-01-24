@@ -17,33 +17,38 @@ The goal of this first activity to familiarize ourselves with `RStudio`. We'll l
 
 -   Calculate summary statistics for our data
 
--   Report our results using both the console and Quarto `.qmd` files
+-   Report our results using both the console and RMarkdown `.rmd`files
 
 ### Setting the Stage
 
-`ECON-590-class-1-activity.qmd` is a `markdown` file - that means you can include regular, formatted text in addition to code and output in the same file.
+`ECON-590-class-1-activity.rmd` is a `markdown` file - that means you can include regular, formatted text in addition to code and output in the same file.
 
--   You can run code "in-line" so that results show in the console -- you can either copy and paste the line you want to run into the console below, or select it and press `ctrl + Enter`
+-   You can run code "in-line" so that results show immediately below your code -- just select the line(s) of code you want to run and press `ctrl + Enter`
 
-    -   You'll see the results from the command printed below on the console
+    -   You can also copy and paste the line you want to run into the "Console" window below
 
--   You can also click "Render" (or press `CTRL + SHIFT + Enter`) to have an HTML document created with both the written text from the assignment and all your code + output
+    -   When you're first experiment with running `R` code and commands, you might find yourself using the Console line a lot -- remember that any code you use for analysis should always be saved in an `R` file (either a `.R`-formatted script or an `.Rmd`-formatted markdown file)
 
-    -   The resulting file should open in your web browser and will be saved as an `.HTML` file wherever you saved your `markdown` file
+-   You can also click "Knit" (or press `CTRL + SHIFT + k`) to have an HTML document created with both the written text from the assignment and all your code + output
+
+    -   The resulting file should open in your web browser and will be saved as an `.html` file wherever you saved your `markdown` file
 
 ### Some `R` Basics
 
-In `R`, we use `<-` as an *assignment operator --* it basically means the same thing as `=` . For instance, entering `x <- 1` creates a new object named `x` that has the numeric value 1. As a shortcut, you can press `ALT + -` instead of having to type out `<-`.
+In `R`, we use `<-` as an *assignment operator --* it essentially means the same thing as `=` . For instance, entering `x <- 1` creates a new object named `x` that stores the numeric value 1. As a shortcut, you can press `ALT + -` instead of having to type out `<-`.
 
 Take a look at the code below to get a sense of how this process works
 
 ```{r}
 
-# In R, any line that starts with a # is a comment -- this is how we'll explain what we're doing in a given section of code. Let's start by creating an object named "a" that stores the number 5 
+# In R, any line that starts with a # is a comment -- this is how we'll explain
+# what we're doing in a given section of code. Let's start by creating an object
+# named "a" that stores the number 5
 
 a <- 5
 
-# Now that we've run the code above, we can just type "a" into the command line, and R will return the value 5
+# Now that we've run the code above, we can just type "a" into the command line,
+# and R will return the value 5
 
 a 
 
@@ -57,16 +62,20 @@ b.vector <- c(1, 2, 3)
 
 b.vector
 
-# Take a look at the "Environment" pane on the right. Where are "a" and "b.vector" saved?
+# Take a look at the "Environment" pane on the right. Where are "a" and
+# "b.vector" saved?
+
 ```
 
 ### Writing Readable Code
 
-*Documenting* your code means explaining what you're doing so that someone can read through what you've written and understand what the code does. It is *essential* for producing clear, usable.
+***Documenting*** your code means explaining what you're doing so that someone can read through what you've written and understand what the code does. It is *essential* for producing clear, usable.
 
--   The ***key difference*** between the programming you might have done in class and what you'll have to do professionally is ***readability*** -- making sure that other people can understand your code
+-   The ***key difference*** between the programming you might have done in class and what you'll have to do professionally is ***readability*** -- making sure that other people can understand your code.
 
--   We'll talk about how to write clear, readable code throughout this course, but the first step is to include comments in your code (see the code section above for an example)
+-   We'll talk about how to write clear, readable code throughout this course, but the first step is to include comments in your code (see the code section above for an example).
+
+While comments are an essential first step when learning to write code, once you've been programming for a while (or you're working on a big picture project), you'll want to take a more systematic approach to documentation. One major reason is that its easy for in-line comments to get "buried" when you have lots of code and not be updated every time a change is made to your code. Other ways of documenting code can include things like README files, examples or sample output of important functions you've defined, etc.
 
 ## Installing and Loading Packages in `R`
 
@@ -104,37 +113,48 @@ sample.data <- read.csv(url("https://raw.githubusercontent.com/mackaytc/econ-590
 
 ### Sample Data Description
 
-Our sample data set `sample.data` contains data from the American Community Survey (ACS). Each of the 4,000 rows in the data set corresponds to a particular person who responsed to the survey -- we'll refer to these rows as ***observations***. Each observation in this data set is then a person. Each column of the data set corresponds to a particular ***variable*** which stores information about each person in the survey. Key variables include:
+Our sample data set `sample.data` contains data from the American Community Survey (ACS). Each of the 4,000 rows in the data set corresponds to a particular person who responded to the survey. We'll refer to each row as an ***observation***. Each observation in this data set is then a person. Each column of the data set corresponds to a particular ***variable*** which stores information about each person in the survey.
+
+This sort of data is known as ***"repeated cross-sectional"*** data -- for each year in our sample, we have survey information from a *cross-section* or sample of the full population of the United States. Because the survey is repeated over multiple years (sampling new respondents each year), we have a *repeated* cross-sectional data set.
+
+Key variables include:
 
 -   `year`: Tells you the year in which this person or observation took the ACS
 
--   `statefips`: Tells you the state in which that person lived when they took the ACS
+-   `state`: Tells you the state in which that person lived when they took the ACS
 
 -   `incwage`: Tells you the annual wage and salary information for that person
 
 ## Working with Data using `dplyr`
 
-Now we want to demonstrate several data cleaning tasks using `dplyr` functions. We'll start by removing variables from our data set, then demonstrate how to create a ***subset*** of the data (a limited sample of observations).
+Now we want to demonstrate several data cleaning tasks using `dplyr` functions. We'll start by removing variables from our data set, then demonstrate how to create a ***subset*** of the data (a limited set of observations from our broader data set, selected based on some critieria).
 
 ```{r}
 
-# We want to make the data set a bit smaller and more manageable for today. Let's start by using the select command to keep only the "sample.data", "year", "statefip", and "incwage" variables
+# We want to make the data set a bit smaller and more manageable for today.
+# Let's start by using the select command to keep only "year", "statefip", and
+# "incwage" variables
 
-sample.data <- select(sample.data, year, statefip, incwage) 
+sample.data <- select(sample.data, year, state, incwage) 
 
 # The head() command will show us a snapshot of what the data set looks like
 
 head(sample.data)
 
-# Suppose we wanted to subset the data so that we only kept observations that lived in New York. To do this, we can use the filter() function to create a new object "sample.data.NY" that stores our subsetted data. 
+# Suppose we wanted to subset the data so that we only kept observations that
+# lived in New York. To do this, we can use the filter() function to create a
+# new object "sample.data.NY" that stores our subsetted data.
 
-sample.data.NY <- filter(sample.data, statefip == "new york")
+sample.data.NY <- filter(sample.data, state == "new york")
 
-# Take a look at the new data set stored in the "Environment" window. Are all the observations from New York? 
+# Take a look at the new data set stored in the "Environment" window. Are all
+# the observations from New York?
 
 head(sample.data.NY)
 
-# We can also use filter() to select observations by numeric values. This time, we won't create a new object - we'll just output the result using head(). We can use the n = 10 option to show 10 rows of the subsetted data. 
+# We can also use filter() to select observations by numeric values. This time,
+# we won't create a new object - we'll just output the result using head(). We
+# can use the n = 10 option to show 10 rows of the subsetted data.
 
 head(filter(sample.data, incwage > 20000), n = 10)
 
@@ -160,9 +180,9 @@ Using our sample data set, answer the following questions. Before you get starte
 
 ```
 
-3)  Report the average wage for everyone who *didn't* live in Florida.
+3)  Report the average wage income from observations who were surveyed between the years 2004 and  2008.
 
-*HINT:* We can use `filter()` again -- try entering `filter(sample.data, statefip %in% "florida")`.
+__HINT:__ You can use `&&` to add multiple restrictions in your `filter()` command.
 
 ```{r}
 
@@ -170,9 +190,12 @@ Using our sample data set, answer the following questions. Before you get starte
 
 ```
 
-4)  Report the average wage income from observations who who surveyed in 2004 through 2008.
+4)  Report the average wage for everyone who lived in Florida, Alabama, or Georgia.
 
-*HINT:* You can use `&&` to add multiple restrictions in your `filter()` command.
+__HINT:__ You could use the `&&`-syntax from (3) above, but that would get cumbersome if you had a longer list of states. Instead, take a look how we defined `b.vector` above. 
+
+ * You can create a similar object named `state.list` that stores the values of the three states (with each state name in parentheses and separated by commas). 
+ * Because we're now telling `R` to look over a *list* of states as opposed to a single state, use `%in%` instead of `==`. 
 
 ```{r}
 
@@ -190,7 +213,7 @@ Using our sample data set, answer the following questions. Before you get starte
 
 6)  Calculate the average wage for each year in the data.
 
-*HINT:* Take a look at the `Group Data` section of the `dplyr` cheat sheet. We want to group the data by year, then calculate average wages using the `summarise()` command.
+__HINT:__ Take a look at the `Group Data` section of the `dplyr` cheat sheet. We want to group the data by year, then calculate average wages using the `summarise()` command.
 
 ```{r}
 
