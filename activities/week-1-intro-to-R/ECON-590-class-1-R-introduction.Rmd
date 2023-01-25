@@ -2,7 +2,7 @@
 title: "ECON 590 Class 1 Activity"
 author: "Taylor Mackay"
 date: '2023-01-21'
-output: html_document
+output: pdf_document
 ---
 
 ## Overview
@@ -18,6 +18,10 @@ The goal of this first activity to familiarize ourselves with `RStudio`. We'll l
 -   Calculate summary statistics for our data
 
 -   Report our results using both the console and RMarkdown `.rmd`files
+
+__NOTE:__ I've split up this file so that the practice problems are in a 
+separate file -- see `ECON-590-class-1-activity-solutions.pdf` on Canvas or
+GitHub for the practice problems.
 
 ### Setting the Stage
 
@@ -157,66 +161,5 @@ head(sample.data.NY)
 # can use the n = 10 option to show 10 rows of the subsetted data.
 
 head(filter(sample.data, incwage > 20000), n = 10)
-
-```
-
-## Practice Problems
-
-Using our sample data set, answer the following questions. Before you get started on the activity, take a look at the `dplyr` cheat sheet posted on the course GitHub page.
-
-1)  Using the `mean()` function, report the average wage income for everyone in our sample
-
-```{r}
-
-# Insert your code here
-
-```
-
-2)  Using the `filter()` function, report the average wage income for everyone in our sample who lives in Florida
-
-```{r}
-
-# Insert your code here
-
-```
-
-3)  Report the average wage income from observations who were surveyed between the years 2004 and  2008.
-
-__HINT:__ You can use `&&` to add multiple restrictions in your `filter()` command.
-
-```{r}
-
-# Insert your code here
-
-```
-
-4)  Report the average wage for everyone who lived in Florida, Alabama, or Georgia.
-
-__HINT:__ You could use the `&&`-syntax from (3) above, but that would get cumbersome if you had a longer list of states. Instead, take a look how we defined `b.vector` above. 
-
- * You can create a similar object named `state.list` that stores the values of the three states (with each state name in parentheses and separated by commas). 
- * Because we're now telling `R` to look over a *list* of states as opposed to a single state, use `%in%` instead of `==`. 
-
-```{r}
-
-# Insert your code here
-
-```
-
-5)  Using the `dplyr` cheat sheet on GitHub, calculate the median, minimum and maximum values of the `incwage` variable
-
-```{r}
-
-# Insert your code here
-
-```
-
-6)  Calculate the average wage for each year in the data.
-
-__HINT:__ Take a look at the `Group Data` section of the `dplyr` cheat sheet. We want to group the data by year, then calculate average wages using the `summarise()` command.
-
-```{r}
-
-# Insert your code here
 
 ```
