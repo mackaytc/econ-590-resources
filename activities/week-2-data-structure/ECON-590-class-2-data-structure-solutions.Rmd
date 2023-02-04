@@ -1,0 +1,128 @@
+---
+title: "ECON 590: Class 2 Activity Solutions"
+output: html_notebook
+---
+
+# Class 2 Activity Overview
+
+The goal today is to learn about the basic `tidyverse` functions for data 
+cleaning and manipulation. Some of the most useful functions are listed below:
+
+-   `select()` - select specific columns or variables from your data
+-   `filter()` - select specific rows or observations from your data
+-   `arrange()` - reorders or sorts the rows of your data
+-   `summarize()` - creates summary statistics (often using `group_by()`)
+-   `mutate()` - creates new variables that are functions of existing variables
+
+To do this, we'll use the same ACS data set from last class. You can load this
+data set by running the code section below: 
+
+```{r Load Data, echo = TRUE }
+# Load the tidyverse package
+
+library(tidyverse)
+
+# Load .csv file stored via course GitHub
+
+data.url <- url("https://raw.githubusercontent.com/mackaytc/econ-590-resources
+                 /main/data/ACS-4k-obs-sample-data.csv")
+
+sample.data <- read.csv(data.url)
+
+# Just like last class, we can use select() to keep just the variables we want
+# to work with below
+
+sample.data <- select(sample.data, year, state, incwage, foodstmp) 
+
+```
+
+In this activity, we'll look at two variables: 
+
+ * `incwage`: total annual wage income (remember that we want to set any 
+      observations of `incwage = 999999` to missing)
+ * `foodstmp`: binary indicator for receiving food stamps / SNAP (coded as 
+      a string variable with `"yes"` and `"no"` responses)
+
+# Questions
+
+For each question below, provide your response in the `R` code block. Make
+sure to include comments so its clear what your code is intended to do!
+
+### Part 1: Use `mutate()` to update the `incwage` variable to account for missing observations (see above)
+
+After you've created missing values of `incwage`, use `mean(is.na())` to check
+what fraction of observations have a missing value for `incwage`.
+
+```{r Data Cleaning incwage, echo = TRUE}
+# Use the code from last week's activity (posted to Canvas) to enter missing
+# values for the incwage variable using the mutate() & replace() functions
+
+sample.data <- mutate(sample.data, 
+                      incwage = replace(incwage, incwage == 999999, NA))
+
+mean(is.na(sample.data$incwage))
+
+```
+### Part 2: Create a new variable that's coded as a logical variable equal to `TRUE` when the survey respondent reports receiving food stamps / SNAP via the `foodstmp` variable
+
+Use the `mean()` function again to calculate what fraction of observations
+received food stamps / SNAP benefits.
+
+```{r Data Cleaning foodstmp, echo = TRUE}
+# You can use mutate() here again -- try using / Googling ifelse() as well
+
+sample.data <- mutate(sample.data, 
+                      foodstmp.logical = ifelse(foodstmp == "yes", 1, 0))
+
+mean((sample.data$foodstmp.logical))
+
+```
+
+### Part 3: Create a new variable with the log-value of incwage (via the `log()` function)
+
+You might've noticed that there's lots of 0's in the data! Remember that 
+`log(0)` isn't defined. There's several things you could do here depending on 
+the context, but for now, you can just add `1` to `incwage` then calculate 
+the logged value.
+
+```{r Data Cleaning Log Wages, echo = TRUE}
+# INSERT your code below
+
+sample.data <- mutate(sample.data,
+                      log.incwage = log(incwage + 1))
+
+```
+
+### Part 4: Calculate average income and food stamp recipiency rates by year
+
+HINT: We did something similar using `group_by()` and `summarize()` as part
+of last week's activity. Make sure you're using the new, logical version of 
+the food stamps variable. 
+
+```{r Data Cleaning Summary Stats by Year, echo = TRUE}
+# INSERT your code below
+
+summary.stats <- group_by(sample.data, year) %>% 
+  summarize(avg.annual.incwage  = mean(incwage, na.rm = TRUE),
+            avg.annual.foodstmp = mean(foodstmp.logical))
+
+summary.stats
+```
+
+### Part 5: Create a new data frame that stores average food stamp recipiency rates for each state _for the last year in the sample only_ and use then use the `arrange()` function to sort this new data frame from highest to lowest rates
+
+NOTE: We don't have all that many observations for each state + year, so 
+don't worry if your data looks a bit wonky at the end here (your highest 
+recipiency rate state should have a rate of 100 percent). 
+
+```{r Data Cleaning SNAP Recipiency, echo = TRUE}
+# INSERT your code below
+
+avg.state.foodstmp <- filter(sample.data, year == 2019) %>% 
+  group_by(state) %>% 
+  summarize(avg.state.foodstmp.rates = mean(foodstmp.logical)) %>% 
+  arrange(desc(avg.state.foodstmp.rates))
+
+head(avg.state.foodstmp)
+
+```

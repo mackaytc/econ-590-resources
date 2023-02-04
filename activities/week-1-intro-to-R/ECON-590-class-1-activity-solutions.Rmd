@@ -177,7 +177,12 @@ incwage.04.08.stats$avg.wage
 __4) Report the average wage for everyone who lived in Florida, Alabama, or 
 Georgia.__
 
-HINT: You could use the `&`-syntax from (3) above, but that would get cumbersome if you had a longer list of states. Instead, take a look how we defined `b.vector` above. You can create a similar object named state.list that stores the values of the three states (with each state name in parentheses and separated by commas). Because we're now telling R to look over a list of states as opposed to a single state, use `%in%` instead of `==`.
+HINT: You could use the `&`-syntax from (3) above, but that would get cumbersome 
+if you had a longer list of states. Instead, take a look how we defined 
+`b.vector` above. You can create a similar object named state.list that stores 
+the values of the three states (with each state name in parentheses and 
+separated by commas). Because we're now telling R to look over a list of 
+states as opposed to a single state, use `%in%` instead of `==`.
 
 ```{r}
 # Define the list of states we want to include in our sub-sample
@@ -194,7 +199,9 @@ data.FL.AL.GA <- filter(sample.data.missings, state %in% state.list)
 mean(data.FL.AL.GA$incwage, na.rm = T)
 
 ```
-__5) Using the `dplyr` cheat sheet on GitHub, calculate the median, minimum and maximum values of the `incwage` variable__
+
+__5) Using the `dplyr` cheat sheet on GitHub, calculate the median, 
+minimum and maximum values of the `incwage` variable__
 
 ```{r}
 # In the example below, we can why using summarize() and returning a data object
@@ -216,6 +223,7 @@ summary.stats$min.wage # minimum wage across the entire sample
 summary.stats$max.wage # maximum wage 
 summary.stats$med.wage # median wage
 ```
+
 __6) Calculate the average wage for each year in the data.__
 
 _HINT:_ Take a look at the Group Data section of the `dplyr` cheat sheet. We 
